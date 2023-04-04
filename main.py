@@ -1,25 +1,25 @@
 from faker import Faker
 from random import randint
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from time import sleep
 
 people_data = []
 people_idx = 0
 fake = Faker(["es_AR"])
 
 def read_data(file_location):
-    if (not file_location.endswith(".txt")):
-        return
     file = open(file_location, 'r')
     lines = file.readlines()
     for line in lines:
         line_data = line.split(',')
-        if (strlen(line_data) == 4):
-            people_data.push({
-                "first_name": line_data[0],
-                "last_name": line_data[1],
-                "email": line_data[2],
-                "dni": line_data[3],
-            })
+        if (len(line_data) != 4): return
+        people_data.append({
+            "first_name": line_data[0],
+            "last_name": line_data[1],
+            "email": line_data[2],
+            "dni": line_data[3],
+        })
 
 def get_person_trait(trait):
     if (len(people_data) > people_idx):
@@ -33,61 +33,47 @@ def get_person_trait(trait):
 
 def get_random_dni():
     return randint(10000000, 47000000)
-# function main()
-#   prompt user for direction of people_data text file, save at file_location 
-#   prompt user for number dia de reserva ej : 5, 6, 9, store field_day
-#   prompt user for number hour ej: 14, 9, 15, store field_hour
-#   prompt user for number field size: 5, 7, store in field_size
-#   prompt user for string email, store in email
-#   prompt user for string password, store in password
-#   if file_location is not null
-#     read_data(file_location)
-#   open web browser
-#   go to cancha reserva page parque patricios url
-#   wait 5 seconds
-#   click reserve cancha size field_size
-#   wait 5 seconds
-#   click ingresar con email
-#   select and type variable email at email input
-#   select and type variable password at password input
-#   select and click ingresar button
-#   wait 5 seconds
-#   select por fecha card, click comenzar button inside
-#   select the day selected field_day and click
-#   wait 5 seconds
-#   click text containing field_hour, click
-#   wait 5 seconds
-#   select and click siguiente button
-#   wait 5 seconds
-#   select father content of "datos de los asistentes", store in assistant_divs
-#   loop children assistant_divs, each children called assistant_div
-#     select input text nombre, store assistant_name
-#     set assistant_name to get_person_trait("first_name")
-#     select input text apellido, store assistant_lastname
-#     set assistant_lastname to get_person_trait("last_name")
-#     select input text email, store assistant_email
-#     set assistant_email to get_person_trait("email")
-#     select input text dni, store assistant_dni
-#     set assistant_dni to get_person_trait("dni")
-#     increase people_idx by 1
-#   select button with "siguiente" text, click it
-#   wait 5 seconds
-#   select button with "finalizar" text, click it
 
-# fake = Faker(["es_AR"])
-# person = { 
-#     "first_name": "Axel", 
-#     "last_name": "Lopez",
-#     "email": "lopezaxel@protonmail.com",
-#     "dni": "46441225"
-# }
-# print("person[\"first_name\"]", person["first_name"])
-# trait = "first_name"
-# print(fake.first_name())
-# print(fake.last_name())
-# print(fake.ascii_free_email())
-# print(randint(10000000, 47000000))
-#
-# driver = webdriver.Firefox()
-# driver.get("https://www.google.com")
-# driver.close()
+def main():
+    polideportivo_url = "https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios"
+    file_location = input("Ingresar direccion de archivo de texto con datos de personas (opcional): ")
+    field_day = input("Ingresar dia de reserva de la cancha, ej: 5, 11: ")
+    field_hour = input("Ingresar hora de reserva de la cancha, ej: 15, 9: ")
+    field_size = input("Ingresar tamaño de la cancha, elegir 5 o 7: ")
+    user_email = input("Ingresar correo electronico de la pagina Buenos Aires: ")
+    user_password = input("Ingresar contraseña de la pagina Buenos Aires: ")
+    if (file_location.endswith(".txt")):
+        read_data(file_location)
+
+    driver = webdriver.Firefox()
+    driver.get(polideportivo_url)
+    driver.find_element(By.PARTIAL_LINK_TEXT, f"fútbol {field_size}").click()
+    sleep(10)
+    driver.find_element(By.ID, "zocial-mail").click()
+    sleep(5)
+    driver.find_element(By.ID, "email").send_keys(user_email)
+    driver.find_element(By.ID, "password-text-field").send_keys(user_password)
+    driver.find_element(By.ID, "login").click()
+    sleep(5)
+    driver.find_element(By.CLASS_NAME, "btn.btn-default.color-fecha").click()
+    sleep(5)
+    driver.find_element(By.XPATH, f"//td[text()={field_day}]").click()
+    sleep(5)
+    driver.find_element(By.XPATH, f"//div[text()='{field_hour}:00 hs.']").click()
+    sleep(10)
+    driver.find_element(By.CLASS_NAME, "siguiente").click()
+    sleep(10)
+    assistant_divs = driver.find_elements(By.CLASS_NAME, "panel-body")
+    for assistant_div in assistant_divs:
+        driver.find_element(By.ID, "form_NombreAlReq").sendkeys(get_person_trait("first_name"))
+        driver.find_element(By.ID, "form_ApellidoA1Req").sendkeys(get_person_trait("last_name"))
+        driver.find_element(By.ID, "form_EmailA1Req").sendkeys(get_person_trait("email"))
+        driver.find_element(By.ID, "form_TipoyNroDocA1Req_numDoc").sendkeys(get_random_dni())
+        people_idx += 1
+    driver.find_element(By.CLASS_NAME, "siguiente").click()
+    sleep(10)
+    # driver.find_element(By.CLASS_NAME, "finalizar").click()
+    # driver.find_
+
+if __name__ == "__main__":
+    main()
