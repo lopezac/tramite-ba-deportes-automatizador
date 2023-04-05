@@ -2131,3 +2131,754 @@ TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
 TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gimp/2.0/help /usr/share/gimp/2.0/help none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gtk-doc /usr/share/gtk-doc none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/xubuntu-docs /usr/share/xubuntu-docs none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+1680620670102	geckodriver	INFO	Listening on 127.0.0.1:33411
+1680620677399	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "47171" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDt98hk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680620689762	Marionette	INFO	Marionette enabled
+1680620689790	Marionette	INFO	Listening on port 46259
+Read port: 46259
+WebDriver BiDi listening on ws://127.0.0.1:47171
+1680620691034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDt98hk/search.json.mozlz4", (void 0)))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.jsm", 237))
+DevTools listening on ws://127.0.0.1:47171/devtools/browser/25db4833-bc08-4af8-a82c-0f07af563cc5
+1680620703223	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1680620706638	Marionette	INFO	Stopped listening on port 46259
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:828:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:828:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:828:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:828:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:828:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gimp/2.0/help /usr/share/gimp/2.0/help none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gtk-doc /usr/share/gtk-doc none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/xubuntu-docs /usr/share/xubuntu-docs none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+1680725472661	geckodriver	INFO	Listening on 127.0.0.1:34865
+1680725475888	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "54835" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile5FPcK3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680725482895	Marionette	INFO	Marionette enabled
+1680725482924	Marionette	INFO	Listening on port 41867
+Read port: 41867
+WebDriver BiDi listening on ws://127.0.0.1:54835
+Read port: 41867
+1680725485608	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5FPcK3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54835/devtools/browser/126411b6-3e9a-4da3-91c2-69a3d3e15e33
+1680725506902	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3157 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://formulario-sigeci.buenosaires.gob.ar."
+1680725554780	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/sites/default/files/asset_injector/js/node_60297-1363d13233f301df6bb49376559c26db.js?rr4ftz, line 552: TypeError: $(...).typeahead is not a function
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+1680725740969	Marionette	INFO	Stopped listening on port 41867
+1680725744913	geckodriver	INFO	Listening on 127.0.0.1:51167
+1680725745189	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "41837" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFZ4xE1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680725747758	Marionette	INFO	Marionette enabled
+1680725747773	Marionette	INFO	Listening on port 38501
+Read port: 38501
+WebDriver BiDi listening on ws://127.0.0.1:41837
+1680725748261	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFZ4xE1/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:41837/devtools/browser/94fedf62-e77f-4344-ad30-21381f331583
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://formulario-sigeci.buenosaires.gob.ar."
+1680725804721	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+1680725977165	geckodriver	INFO	Listening on 127.0.0.1:58995
+1680725977442	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "40841" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileUROOmD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680725980333	Marionette	INFO	Marionette enabled
+1680725980357	Marionette	INFO	Listening on port 36095
+Read port: 36095
+WebDriver BiDi listening on ws://127.0.0.1:40841
+1680725981195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUROOmD/search.json.mozlz4", (void 0)))
+1680725990732	Marionette	INFO	Stopped listening on port 36095
+1680725990850	CDP	WARN	Failed to remove undefined (Could not parse path (undefined): NS_ERROR_FILE_UNRECOGNIZED_PATH)
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 648: TypeError: this.browsingContext is null
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/sites/default/files/asset_injector/js/node_60297-1363d13233f301df6bb49376559c26db.js?rr4ftz, line 552: TypeError: $(...).typeahead is not a function
+console.warn: SearchService: "#init: abandoning init due to shutting down"
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+1680725993450	Marionette	INFO	Stopped listening on port 38501
+1680725997278	geckodriver	INFO	Listening on 127.0.0.1:46007
+1680725997585	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "45447" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile0cB3FN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680726000060	Marionette	INFO	Marionette enabled
+1680726000122	Marionette	INFO	Listening on port 37179
+Read port: 37179
+WebDriver BiDi listening on ws://127.0.0.1:45447
+1680726000630	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0cB3FN/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:45447/devtools/browser/0a5ded70-6b2a-415f-9111-2995bb761542
+1680726017432	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://formulario-sigeci.buenosaires.gob.ar."
+1680726054645	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+1680726204677	geckodriver	INFO	Listening on 127.0.0.1:37413
+1680726204932	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "48187" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilegjJrrE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680726209448	Marionette	INFO	Marionette enabled
+1680726209491	Marionette	INFO	Listening on port 38417
+Read port: 38417
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 572))
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 587: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1680726209653	Marionette	INFO	Stopped listening on port 37179
+WebDriver BiDi listening on ws://127.0.0.1:48187
+1680726210214	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegjJrrE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:48187/devtools/browser/a1356c45-ab48-49ba-bacc-4b4ecd5b0b75
+1680726228589	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://formulario-sigeci.buenosaires.gob.ar."
+1680726263279	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://servicios.usig.buenosaires.gob.ar/nd-js/1.4/normalizadorDirecciones.min.js, line 1: uncaught exception: Callejero no disponible.
+JavaScript error: https://servicios.usig.buenosaires.gob.ar/nd-js/1.4/normalizadorDirecciones.min.js, line 1: uncaught exception: Callejero no disponible.
+JavaScript error: https://servicios.usig.buenosaires.gob.ar/nd-js/1.4/normalizadorDirecciones.min.js, line 1: uncaught exception: Callejero no disponible.
+JavaScript error: https://servicios.usig.buenosaires.gob.ar/nd-js/1.4/normalizadorDirecciones.min.js, line 1: uncaught exception: Callejero no disponible.
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1680726791546	geckodriver	INFO	Listening on 127.0.0.1:35187
+1680726791840	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "49621" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilelhzVTh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680726794288	Marionette	INFO	Marionette enabled
+1680726794303	Marionette	INFO	Listening on port 38589
+Read port: 38589
+WebDriver BiDi listening on ws://127.0.0.1:49621
+1680726794840	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1680726796026	Marionette	INFO	Stopped listening on port 38417
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelhzVTh/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49621/devtools/browser/90d2fa64-1898-4ee5-b64b-98018919b540
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+1680726812699	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://formulario-sigeci.buenosaires.gob.ar."
+1680726858508	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript warning: https://buenosaires.gob.ar/sites/default/files/js/js_aTrIBFeJoIEaBtT_q7Iz4pc1tqpbgh5Om1CrKRg852g.js, line 2: Script terminated by timeout at:
+isPlainObject@https://buenosaires.gob.ar/sites/default/files/js/js_aTrIBFeJoIEaBtT_q7Iz4pc1tqpbgh5Om1CrKRg852g.js:2:2787
+S.fn.extend@https://buenosaires.gob.ar/sites/default/files/js/js_aTrIBFeJoIEaBtT_q7Iz4pc1tqpbgh5Om1CrKRg852g.js:2:2410
+$t@https://buenosaires.gob.ar/sites/default/files/js/js_aTrIBFeJoIEaBtT_q7Iz4pc1tqpbgh5Om1CrKRg852g.js:2:74837
+ajaxSetup@https://buenosaires.gob.ar/sites/default/files/js/js_aTrIBFeJoIEaBtT_q7Iz4pc1tqpbgh5Om1CrKRg852g.js:2:75570
+@https://buenosaires.gob.ar/sites/default/files/js/js_aTrIBFeJoIEaBtT_q7Iz4pc1tqpbgh5Om1CrKRg852g.js:2:82768
+@https://buenosaires.gob.ar/sites/default/files/js/js_aTrIBFeJoIEaBtT_q7Iz4pc1tqpbgh5Om1CrKRg852g.js:2:220
+@https://buenosaires.gob.ar/sites/default/files/js/js_aTrIBFeJoIEaBtT_q7Iz4pc1tqpbgh5Om1CrKRg852g.js:2:225
+
+JavaScript error: https://buenosaires.gob.ar/sites/default/files/js/js_ub51wMJa7a5s4rqOWoE6LS41MCo9CtIgrOXRfmOjgqI.js, line 14: ReferenceError: Drupal is not defined
+JavaScript error: https://buenosaires.gob.ar/sites/default/files/asset_injector/js/node_60297-1363d13233f301df6bb49376559c26db.js?rr4ftz, line 1: ReferenceError: jQuery is not defined
+JavaScript error: https://buenosaires.gob.ar/sites/default/files/js/js_SAESBGXTNdsPNgoioFyk5y-VdQOObYc8BgtvK1gU8JQ.js, line 27: ReferenceError: jQuery is not defined
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 1: ReferenceError: jQuery is not defined
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+1680726983815	geckodriver	INFO	Listening on 127.0.0.1:40409
+1680726984117	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "49341" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile50vHhN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680726986667	Marionette	INFO	Marionette enabled
+1680726986682	Marionette	INFO	Listening on port 46357
+Read port: 46357
+WebDriver BiDi listening on ws://127.0.0.1:49341
+1680726987167	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1680726988047	Marionette	INFO	Stopped listening on port 38589
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile50vHhN/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49341/devtools/browser/913a89d7-d135-4d76-8a7d-3f66a837c870
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://formulario-sigeci.buenosaires.gob.ar."
+1680727033202	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs, line 304: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/sites/default/files/asset_injector/js/node_60297-1363d13233f301df6bb49376559c26db.js?rr4ftz, line 552: TypeError: $(...).typeahead is not a function
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://buenosaires.gob.ar/que-turno-queres-sacar line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+1680727441282	Marionette	INFO	Stopped listening on port 46357
+1680727450555	geckodriver	INFO	Listening on 127.0.0.1:48581
+1680727450837	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "56709" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebqKRgs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680727453277	Marionette	INFO	Marionette enabled
+1680727453291	Marionette	INFO	Listening on port 39681
+Read port: 39681
+WebDriver BiDi listening on ws://127.0.0.1:56709
+1680727453778	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebqKRgs/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56709/devtools/browser/fc1e74bf-d81d-4c18-ba1f-e67df78a27ac
+1680727470696	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://formulario-sigeci.buenosaires.gob.ar."
+1680727515619	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+1680727544849	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: https://buenosaires.gob.ar/sites/default/files/asset_injector/js/node_60297-1363d13233f301df6bb49376559c26db.js?rr4ftz, line 552: TypeError: $(...).typeahead is not a function
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannel.contentType]
+console.error: "stylesheets: fetch failed for https://formulario-sigeci.buenosaires.gob.ar/bastrap3/bastrap.css, using system principal instead."
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+console.error: "stylesheets: fetch failed for https://formulario-sigeci.buenosaires.gob.ar/bastrap3/bastrap.css, using system principal instead."
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189313/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189313/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189314/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189314/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189315/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189315/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189316/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189316/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189317/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189317/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189318/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189318/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442451043/pagestyle27, type getLayout failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:183:36\nupdateBoxModel@resource://devtools/client/inspector/boxmodel/box-model.js:223:18\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonReflowInSelection@resource://devtools/client/inspector/inspector.js:1604:10\n_notifyWatchers@resource://devtools/shared/commands/resource/resource-command.js:872:24\nthrottledFunction@resource://devtools/shared/throttle.js:45:21\n_onResourceAvailable@resource://devtools/shared/commands/resource/resource-command.js:717:12\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonPacket@resource://devtools/shared/protocol/Front.js:349:13\nonPacket@resource://devtools/client/devtools-client.js:488:13\nsend/<@resource://devtools/shared/transport/local-transport.js:67:25\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442451043/pagestyle27, type getLayout failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:183:36\nupdateBoxModel@resource://devtools/client/inspector/boxmodel/box-model.js:223:18\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonReflowInSelection@resource://devtools/client/inspector/inspector.js:1604:10\n_notifyWatchers@resource://devtools/shared/commands/resource/resource-command.js:872:24\nthrottledFunction@resource://devtools/shared/throttle.js:45:21\n_onResourceAvailable@resource://devtools/shared/commands/resource/resource-command.js:717:12\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonPacket@resource://devtools/shared/protocol/Front.js:349:13\nonPacket@resource://devtools/client/devtools-client.js:488:13\nsend/<@resource://devtools/shared/transport/local-transport.js:67:25\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442451043/pagestyle27, type getApplied failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetApplied@resource://devtools/client/fronts/page-style.js:61:29\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:187:44\n", "resource://devtools/shared/protocol/Front.js", 106))
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal40802189313/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal40802189314/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal40802189315/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal40802189316/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal40802189317/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal40802189318/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+console.error: "Unable to find target with innerWindowId:6442451043"
+console.error: "Unable to find target with innerWindowId:6442451043"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getLayout' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getLayout' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Unable to find target with innerWindowId:6442451043"
+console.error: "Unable to find target with innerWindowId:6442451043"
+console.error: "Unable to find target with innerWindowId:6442451043"
+console.error: "Unable to find target with innerWindowId:6442451043"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1680727792865	Marionette	INFO	Stopped listening on port 39681
+1680727806153	geckodriver	INFO	Listening on 127.0.0.1:53407
+1680727806457	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "58805" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSqKBRU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680727808888	Marionette	INFO	Marionette enabled
+1680727808902	Marionette	INFO	Listening on port 34777
+Read port: 34777
+WebDriver BiDi listening on ws://127.0.0.1:58805
+1680727809375	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSqKBRU/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58805/devtools/browser/c7481d52-5c6a-4d46-95ed-db10082f276f
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1680727828150	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://formulario-sigeci.buenosaires.gob.ar."
+1680727859999	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: https://buenosaires.gob.ar/sites/default/files/asset_injector/js/node_60297-1363d13233f301df6bb49376559c26db.js?rr4ftz, line 552: TypeError: $(...).typeahead is not a function
+console.error: (new TypeError("this.toolbox is null", "resource://devtools/client/inspector/inspector.js", 523))
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://devtools/client/inspector/inspector.js, line 1368: TypeError: this.panelDoc is null
+1680727976832	Marionette	INFO	Stopped listening on port 34777
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal40802189313/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 241))
+1680728033199	geckodriver	INFO	Listening on 127.0.0.1:50365
+1680728033485	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "52555" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileBc9N4d"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1680728036276	Marionette	INFO	Marionette enabled
+1680728036291	Marionette	INFO	Listening on port 43439
+Read port: 43439
+WebDriver BiDi listening on ws://127.0.0.1:52555
+1680728036768	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBc9N4d/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52555/devtools/browser/58bc4aa3-6fe7-473a-9d58-389d77f017e7
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1680728058502	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/moment.js/2.29.1/moment.min.js.map, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://login.buenosaires.gob.ar/auth/resources/2.5.0-rc1/login/miba/js/utils.js, line 168: TypeError: emailConfirm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.buenosaires.gob.ar."
+JavaScript warning: https://resources-rt.idx.lat/T2.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3505 line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://formulario-sigeci.buenosaires.gob.ar."
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WRB24B, line 43: uncaught exception: [object Object]
+JavaScript error: https://formulario-sigeci.buenosaires.gob.ar/tramites/Futbol7PolideportivoParquePatricios line 552 > injectedScript, line 5: SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 1 column 2 of the JSON data

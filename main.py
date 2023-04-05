@@ -22,8 +22,8 @@ def read_data(file_location):
         })
 
 def get_person_trait(trait):
-    if (len(people_data) > people_idx):
-        return people_data[people_idx][trait]
+    # if (len(people_data) > people_idx):
+    #     return people_data[people_idx][trait]
     if (trait == "first_name"):
         return fake.first_name()
     elif (trait == "last_name"):
@@ -60,18 +60,28 @@ def main():
     driver.find_element(By.XPATH, f"//td[text()={field_day}]").click()
     sleep(5)
     driver.find_element(By.XPATH, f"//div[text()='{field_hour}:00 hs.']").click()
-    sleep(10)
+    sleep(5)
     driver.find_element(By.CLASS_NAME, "siguiente").click()
-    sleep(10)
-    assistant_divs = driver.find_elements(By.CLASS_NAME, "panel-body")
-    for assistant_div in assistant_divs:
-        driver.find_element(By.ID, "form_NombreAlReq").sendkeys(get_person_trait("first_name"))
-        driver.find_element(By.ID, "form_ApellidoA1Req").sendkeys(get_person_trait("last_name"))
-        driver.find_element(By.ID, "form_EmailA1Req").sendkeys(get_person_trait("email"))
-        driver.find_element(By.ID, "form_TipoyNroDocA1Req_numDoc").sendkeys(get_random_dni())
-        people_idx += 1
+    sleep(5)
+    nombre_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_Nombre')]");
+    apellido_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_Apellido')]");
+    email_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_Email')]"); # case apart dont work form_emailA5REQ
+    dni_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_TipoyNroDocA')]");
+    # remove sleep
+    for nombre_input in nombre_inputs:
+        sleep(2)
+        nombre_input.send_keys(get_person_trait("first_name"))
+    for apellido_input in apellido_inputs:
+        sleep(2)
+        apellido_input.send_keys(get_person_trait("last_name"))
+    for email_input in email_inputs:
+        sleep(2)
+        email_input.send_keys(get_person_trait("email"))
+    for dni_input in dni_inputs:
+        sleep(2)
+        dni_input.send_keys(get_random_dni())
     driver.find_element(By.CLASS_NAME, "siguiente").click()
-    sleep(10)
+    sleep(5)
     # driver.find_element(By.CLASS_NAME, "finalizar").click()
     # driver.find_
 
