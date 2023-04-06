@@ -16,3 +16,14 @@ iniciar sesion, pedir turno, seleccionar horario y fecha, rellenar los datos
 No hago nada con su email ni contraseña de su cuenta miBA, puede leer el codigo 
 del programa (72 lineas) y comprobar que no las almaceno ni utilizo para ningun 
 fin malicioso.
+
+# Instalación
+
+```bash
+  # clonar repositorio
+  git clone git@github.com:lopezac/tramite-ba-deportes.git
+  # instalar dependencias
+  pip install -r requirements.txt
+  # correr programa
+  python3 main.py
+```
