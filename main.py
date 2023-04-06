@@ -4,26 +4,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 
-people_data = []
-people_idx = 0
 fake = Faker(["es_AR"])
 
-def read_data(file_location):
-    file = open(file_location, 'r')
-    lines = file.readlines()
-    for line in lines:
-        line_data = line.split(',')
-        if (len(line_data) != 4): return
-        people_data.append({
-            "first_name": line_data[0],
-            "last_name": line_data[1],
-            "email": line_data[2],
-            "dni": line_data[3],
-        })
-
 def get_person_trait(trait):
-    # if (len(people_data) > people_idx):
-    #     return people_data[people_idx][trait]
     if (trait == "first_name"):
         return fake.first_name()
     elif (trait == "last_name"):
@@ -35,55 +18,55 @@ def get_random_dni():
     return randint(10000000, 47000000)
 
 def main():
-    polideportivo_url = "https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios"
-    file_location = input("Ingresar direccion de archivo de texto con datos de personas (opcional): ")
-    field_day = input("Ingresar dia de reserva de la cancha, ej: 5, 11: ")
-    field_hour = input("Ingresar hora de reserva de la cancha, ej: 15, 9: ")
-    field_size = input("Ingresar tamaño de la cancha, elegir 5 o 7: ")
-    user_email = input("Ingresar correo electronico de la pagina Buenos Aires: ")
-    user_password = input("Ingresar contraseña de la pagina Buenos Aires: ")
-    if (file_location.endswith(".txt")):
-        read_data(file_location)
+    polideportivo_url = input(
+        "Ingresar URL de la pagina de las canchas del polideportivo deseado, (vacio Parque Patricios Futbol): "
+    )
+    if len(polideportivo_url) < 20:
+        polideportivo_url = "https://buenosaires.gob.ar/desarrolloeconomico/deportes/futbol-en-el-polideportivo-parque-patricios"
+    field_day = input("Ingresar dia de reserva de la cancha, (ejemplo: 4, 11): ")
+    field_hour = input("Ingresar la hora de reserva de la cancha, (ejemplo: 14, 09): ")
+    field_size = input("Ingresar el tamaño de la cancha, elegir 5 o 7: ")
+    user_email = input("Ingresar el email de tu cuenta miBA: ")
+    user_password = input("Ingresar la contraseña de tu cuenta miBA: ")
 
     driver = webdriver.Firefox()
     driver.get(polideportivo_url)
     driver.find_element(By.PARTIAL_LINK_TEXT, f"fútbol {field_size}").click()
     sleep(10)
     driver.find_element(By.ID, "zocial-mail").click()
-    sleep(5)
+    sleep(4)
     driver.find_element(By.ID, "email").send_keys(user_email)
     driver.find_element(By.ID, "password-text-field").send_keys(user_password)
     driver.find_element(By.ID, "login").click()
-    sleep(5)
+    sleep(4)
     driver.find_element(By.CLASS_NAME, "btn.btn-default.color-fecha").click()
-    sleep(5)
+    sleep(4)
     driver.find_element(By.XPATH, f"//td[text()={field_day}]").click()
-    sleep(5)
+    sleep(4)
     driver.find_element(By.XPATH, f"//div[text()='{field_hour}:00 hs.']").click()
-    sleep(5)
+    sleep(4)
     driver.find_element(By.CLASS_NAME, "siguiente").click()
-    sleep(5)
+    sleep(4)
     nombre_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_Nombre')]");
     apellido_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_Apellido')]");
-    email_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_Email')]"); # case apart dont work form_emailA5REQ
-    dni_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_TipoyNroDocA')]");
-    # remove sleep
+    email_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_Email')]"); 
+    # strange email with different id form_emailA5REQ
+    email_inputs.append(driver.find_element(By.XPATH, "//input[contains(@id, 'form_email')]"))
+    dni_inputs = driver.find_elements(By.XPATH, "//input[contains(@id, 'form_TipoyNroDocA')][@type='number']");
+
     for nombre_input in nombre_inputs:
-        sleep(2)
         nombre_input.send_keys(get_person_trait("first_name"))
     for apellido_input in apellido_inputs:
-        sleep(2)
         apellido_input.send_keys(get_person_trait("last_name"))
     for email_input in email_inputs:
-        sleep(2)
         email_input.send_keys(get_person_trait("email"))
     for dni_input in dni_inputs:
-        sleep(2)
         dni_input.send_keys(get_random_dni())
+
     driver.find_element(By.CLASS_NAME, "siguiente").click()
-    sleep(5)
-    # driver.find_element(By.CLASS_NAME, "finalizar").click()
-    # driver.find_
+    driver.find_element(By.ID, "confirmarTurno").click()
+    sleep(4)
+    driver.find_element(By.CLASS_NAME, "siguiente").click()
 
 if __name__ == "__main__":
     main()
