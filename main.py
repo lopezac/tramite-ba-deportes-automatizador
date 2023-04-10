@@ -2,6 +2,7 @@ from faker import Faker
 from random import randint
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from webdriver_manager.firefox import GeckoDriverManager
 from time import sleep
 
 fake = Faker(["es_AR"])
@@ -29,7 +30,7 @@ def main():
     user_email = input("Ingresar el email de tu cuenta miBA: ")
     user_password = input("Ingresar la contraseña de tu cuenta miBA: ")
 
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
     driver.get(polideportivo_url)
     driver.find_element(By.PARTIAL_LINK_TEXT, f"fútbol {field_size}").click()
     sleep(10)
