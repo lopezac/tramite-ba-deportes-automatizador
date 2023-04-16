@@ -2,6 +2,7 @@ from faker import Faker
 from random import randint
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
 from time import sleep
 
@@ -27,10 +28,11 @@ def main():
     field_day = input("Ingresar dia de reserva de la cancha, (ejemplo: 4, 11): ")
     field_hour = input("Ingresar la hora de reserva de la cancha, (ejemplo: 14, 09): ")
     field_size = input("Ingresar el tamaño de la cancha, elegir 5 o 7: ")
+    field_type = input("Ingresar el tipo de cancha, elegir asfalto o sintetico: ")
     user_email = input("Ingresar el email de tu cuenta miBA: ")
     user_password = input("Ingresar la contraseña de tu cuenta miBA: ")
 
-    driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+    driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
     driver.get(polideportivo_url)
     driver.find_element(By.PARTIAL_LINK_TEXT, f"fútbol {field_size}").click()
     sleep(10)
@@ -43,6 +45,8 @@ def main():
     driver.find_element(By.CLASS_NAME, "btn.btn-default.color-fecha").click()
     sleep(4)
     driver.find_element(By.XPATH, f"//td[text()={field_day}]").click()
+    sleep(4)
+    driver.find_element(By.XPATH, f"//td[text()={field_type}]").click();
     sleep(4)
     driver.find_element(By.XPATH, f"//div[text()='{field_hour}:00 hs.']").click()
     sleep(4)
