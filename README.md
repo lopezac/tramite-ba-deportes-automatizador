@@ -1,4 +1,4 @@
-# tramite-ba-deportes
+# tramite-ba-futbol
 
 Hola, este script lo cree para ahorrar tiempo, para automatizar un tramite 
 que cuando lo tenia que hacer era bastante tedioso.
@@ -13,15 +13,11 @@ iniciar sesion, pedir turno, seleccionar horario y fecha, rellenar los datos
 (nombre, apellido, email y dni), con datos falsos gracias al paquete 
 [Faker](https://github.com/joke2k/faker)
 
-No hago nada con su email ni contraseña de su cuenta miBA, puede leer el codigo 
-del programa (72 lineas) y comprobar que no las almaceno ni utilizo para ningun 
-fin malicioso.
-
 # Instalación
 
 ```bash
   # clonar repositorio
-  git clone git@github.com:lopezac/tramite-ba-deportes.git
+  git clone git@github.com:lopezac/tramite-ba-futbol.git
   # instalar dependencias
   pip install -r requirements.txt
   # correr programa
