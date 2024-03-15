@@ -18,6 +18,7 @@ iniciar sesion, pedir turno, seleccionar horario y fecha, rellenar los datos
 ```bash
   # clonar repositorio
   git clone git@github.com:lopezac/tramite-ba-futbol.git
+  cd tramite-ba-futbol
   # instalar dependencias
   pip install -r requirements.txt
   # correr programa
