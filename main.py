@@ -27,7 +27,6 @@ def get_person_trait(trait_name):
 
     return trait
 
-
 def get_random_dni():
     return randint(10000000, 47000000)
 
@@ -48,6 +47,7 @@ def get_cancha_size(poli_idx):
 
     return canchas[cancha_idx]
 
+
 def get_cancha_type(poli_idx):
     poli_name = polis[poli_idx]["name"]
     cancha_type = ""
@@ -62,6 +62,7 @@ def get_cancha_type(poli_idx):
         cancha_type = int(input("Ingresar el numero de cancha: "))
 
     return cancha_type
+
 
 def get_browser_name():
     for idx in range(len(supported_browsers)):
@@ -188,8 +189,9 @@ def main():
     # Clickear en el boton de siguiente
     driver.find_element(By.XPATH, "//button[contains(text(), 'Finalizar')]").click()
 
-    # close browser and informar que fue un exito la reserva
-
+    # Cerrar navegador e informar que se reservo exitosamente
+    driver.close()
+    print("Se reservo la cancha exitosamente!")
 
 if __name__ == "__main__":
     main()
