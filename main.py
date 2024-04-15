@@ -33,7 +33,7 @@ def get_random_dni():
 
 def get_poli_url():
     for idx in range(len(polis)):
-        print(f"{idx} - Polideportivo {polis[idx]["name"]}")
+        print(f"{idx} - Polideportivo {polis[idx]['name']}")
 
     return int(input("Ingrese el numero del polideportivo deseado: "))
 
@@ -152,16 +152,18 @@ def main():
 
     # Elegir todos los inputs de nombre, apellido, email y dni
     nombre_inputs = driver.find_elements(
-        By.XPATH, "//input[contains(@id, 'form_Nombre')]"
+        By.XPATH, "//input[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'form_nombre')]"
+
     )
     apellido_inputs = driver.find_elements(
-        By.XPATH, "//input[contains(@id, 'form_Apellido')]"
+        By.XPATH, "//input[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'form_apellido')]"
     )
     email_inputs = driver.find_elements(
-        By.XPATH, "//input[contains(@id, 'form_Email')]"
+        By.XPATH, "//input[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'form_email')]"
     )
     dni_inputs = driver.find_elements(
-        By.XPATH, "//input[contains(@id, 'form_TipoyNroDocA')][@type='number']"
+        By.XPATH, "//input[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'form_tipoynrodoca')][@type='number']"
+        
     )
     sleep(SPEED)
 
