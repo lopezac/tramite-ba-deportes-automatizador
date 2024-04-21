@@ -1,10 +1,19 @@
-polis = [
+supported_polis = [
     {
         "name": "Parque Patricios",
         "canchas": [5, 7],
         "url": "https://buenosaires.gob.ar/jefaturadegabinete/deportes/futbol-en-el-polideportivo-parque-patricios",
-        "tipo": ["Asfalto", "Sintético"],
+        "tipos": ["Asfalto", "Sintético"],
     },
+    {
+        "name": "Martin Fierro",
+        "canchas": [5, 7],
+        "url": "https://buenosaires.gob.ar/jefaturadegabinete/deportes/futbol-en-el-polideportivo-martin-fierro",
+        "tipos": ["Cancha 1", "Cancha 2"],
+    },
+]
+
+not_supported_polis = [
     {
         "name": "Costa Rica",
         "canchas": [5],
@@ -34,11 +43,6 @@ polis = [
         "name": "Dorrego",
         "canchas": [5],
         "url": "https://buenosaires.gob.ar/jefaturadegabinete/deportes/futbol-en-el-polideportivo-dorrego",
-    },
-    {
-        "name": "Martin Fierro",
-        "canchas": [5, 7],
-        "url": "https://buenosaires.gob.ar/jefaturadegabinete/deportes/futbol-en-el-polideportivo-martin-fierro",
     },
     {
         "name": "Onega",
