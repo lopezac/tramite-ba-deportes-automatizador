@@ -36,15 +36,15 @@ def get_person_trait(trait_name):
 
 
 def get_poli_idx(polis):
-    for idx in range(len(polis)):
-        print(f"{idx} - Polideportivo {polis[idx]["name"]}")
+    for idx, value in enumerate(polis):
+        print(f"{idx} - Polideportivo {value["name"]}")
 
     return int(input("Ingrese el numero del polideportivo deseado: "))
 
 
 def get_cancha_size(poli_canchas):
-    for idx in range(len(poli_canchas)):
-        print(f"{idx} - Cancha futbol {poli_canchas[idx]}")
+    for idx, value in enumerate(poli_canchas):
+        print(f"{idx} - Cancha Futbol {value}")
 
     cancha_idx = int(input("Ingrese el numero de la cancha deseada: "))
 
@@ -52,12 +52,21 @@ def get_cancha_size(poli_canchas):
 
 
 def get_cancha_type(poli_tipos):
-    for idx in range(len(poli_tipos)):
-        print(f"{idx} - {poli_tipos[idx]}")
+    for idx, value in enumerate(poli_tipos):
+        print(f"{idx} - {value}")
 
     tipo_idx = int(input("Ingresar el tipo de cancha: "))
 
     return poli_tipos[tipo_idx]
+
+
+def get_cancha_sport(poli_sports):
+    for idx, value in enumerate(poli_sports):
+        print(f"{idx} - {value}")
+
+    sport_idx = int(input("Ingresar el deporte de cancha: "))
+
+    return poli_sports[sport_idx]
 
 
 def main():
@@ -66,27 +75,27 @@ def main():
     poli = supported_polis[poli_idx]
 
     # Ingresar informacion de la cancha y el usuario
+    cancha_sport = get_cancha_sport(list(poli["urls"].keys()))
     cancha_day = input("Ingresar dia de reserva de la cancha: ")
     cancha_hour = input("Ingresar la hora de reserva de la cancha: ")
-    cancha_size = get_cancha_size(poli["canchas"])
-    cancha_type = get_cancha_type(poli["tipos"])
+    if cancha_sport == "Futbol":
+        cancha_size = get_cancha_size(poli["canchas"])
+        cancha_type = get_cancha_type(poli["tipos"])
     user_email = input("Ingresar el email de tu cuenta miBA: ")
     user_password = input("Ingresar la contraseña de tu cuenta miBA: ")
     driver = get_browser()
 
     # Entrar a la pagina de la cancha
-    driver.get(poli["url"])
+    driver.get(poli["urls"][cancha_sport])
+    sleep(SPEED)
 
     # Si tiene una sola cancha clickearla, si son mas elegirla
-    if len(poli["canchas"]) == 1:
-        driver.find_element(
-            By.PARTIAL_LINK_TEXT,
-            "https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=",
-        ).click()
+    if len(poli["canchas"]) == 1 or cancha_sport == "Basquet":
+        texto_anchor = "Reservá tu turno"
     else:
-        driver.find_element(
-            By.XPATH, f"//a[contains(text(), 'fútbol {cancha_size}')]"
-        ).click()
+        texto_anchor = f"fútbol {cancha_size}"
+    driver.find_element(
+        By.XPATH, f"//a[contains(text(), '{texto_anchor}')]").click()
     sleep(SPEED)
 
     # Loguearse con email
@@ -111,7 +120,7 @@ def main():
     sleep(SPEED)
 
     # Elegir cancha dependiendo del polideportivo
-    if cancha_type:
+    if cancha_sport == "Futbol" and cancha_type:
         driver.find_element(
             By.XPATH, f"//input[contains(@data-placename, '{cancha_type}')]"
         ).click()
