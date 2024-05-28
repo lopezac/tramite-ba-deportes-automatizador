@@ -3,6 +3,7 @@ from random import randint
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.service import Service
+from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.firefox import GeckoDriverManager
 from time import sleep, strftime
 from polideportivos_data import supported_polis
@@ -78,6 +79,7 @@ def main():
     cancha_sport = get_cancha_sport(list(poli["urls"].keys()))
     cancha_day = input("Ingresar dia de reserva de la cancha: ")
     cancha_hour = input("Ingresar la hora de reserva de la cancha: ")
+    cancha_month = input("Ingresar el mes de reserva de la cancha: ")
     if cancha_sport == "Futbol":
         cancha_size = get_cancha_size(poli["canchas"])
         cancha_type = get_cancha_type(poli["tipos"])
@@ -112,11 +114,20 @@ def main():
     driver.find_element(By.XPATH, "//div[@data-start='fecha']").click()
     sleep(SPEED)
 
+    # try:
+    #     driver.find_element(By.XPATH, f"//p[@data-month='{cancha_month}']")
+    # except NoSuchElementException:
+    # Elegir mes
+    driver.find_element(By.ID, "monthSelected").click()
+    sleep(SPEED)
+
+    driver.find_element(By.XPATH, f"//p[@data-month='{cancha_month}']").click()
+    sleep(SPEED)
+
     # Elegir dia de la cancha
-    month = strftime("%m")
     year = strftime("%Y")
     driver.find_element(
-        By.XPATH, f"//h4[@data-date='{year}-{month}-{cancha_day}']").click()
+        By.XPATH, f"//h4[@data-date='{year}-{cancha_month}-{cancha_day}']").click()
     sleep(SPEED)
 
     # Elegir cancha dependiendo del polideportivo
