@@ -17,6 +17,15 @@ supported_polis = [
         },
         "tipos": ["Cancha 1", "Cancha 2"],
     },
+    {
+        "name": "Martin Fierro",
+        "name": "Don Pepe",
+        "canchas": [5],
+        "urls": {
+            "Futbol": "https://buenosaires.gob.ar/jefaturadegabinete/deportes/futbol-en-el-polideportivo-don-pepe",
+        },
+        "tipos": ["Cancha 1", "Cancha 2", "Cancha 3", "Cancha 4"],
+    },
 ]
 
 not_supported_polis = [
@@ -39,11 +48,6 @@ not_supported_polis = [
         "name": "Colegiales",
         "canchas": [5],
         "url-futbol": "https://buenosaires.gob.ar/jefaturadegabinete/deportes/futbol-en-el-polideportivo-colegiales",
-    },
-    {
-        "name": "Don Pepe",
-        "canchas": [5],
-        "url-futbol": "https://buenosaires.gob.ar/jefaturadegabinete/deportes/futbol-en-el-polideportivo-don-pepe",
     },
     {
         "name": "Dorrego",
