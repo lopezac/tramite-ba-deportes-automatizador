@@ -92,9 +92,9 @@ def main():
     sleep(SPEED)
 
     # Si tiene una sola cancha clickearla, si son mas elegirla
-    if len(poli["canchas"]) == 1 or cancha_sport == "Basquet":
+    if len(poli["canchas"]) == 1 or (cancha_sport in ["Basquet", "Tennis"]):
         texto_anchor = "Reservá tu turno"
-    else:
+    else:               
         texto_anchor = f"fútbol {cancha_size}"
     driver.find_element(
         By.XPATH, f"//a[contains(text(), '{texto_anchor}')]").click()

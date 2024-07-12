@@ -18,11 +18,11 @@ supported_polis = [
         "tipos": ["Cancha 1", "Cancha 2"],
     },
     {
-        "name": "Martin Fierro",
         "name": "Don Pepe",
         "canchas": [5],
         "urls": {
             "Futbol": "https://buenosaires.gob.ar/jefaturadegabinete/deportes/futbol-en-el-polideportivo-don-pepe",
+            "Tennis": "https://buenosaires.gob.ar/jefaturadegabinete/deportes/tenis-en-el-polideportivo-don-pepe"
         },
         "tipos": ["Cancha 1", "Cancha 2", "Cancha 3", "Cancha 4"],
     },
