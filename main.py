@@ -3,15 +3,18 @@ from random import randint
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.service import Service
-from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support.ui import Select
 from webdriver_manager.firefox import GeckoDriverManager
 from time import sleep, strftime
+from datetime import datetime
 from polideportivos_data import supported_polis
 
 fake = Faker(["es_AR"])
 
 # Dependiendo de la velocidad de tu computadora ajustar la velocidad
-SPEED = 4
+SPEED = 1
+# Se utiliza translate para volver el texto del id a minusculas
+ID_TO_LOWERCASE = "translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"
 
 
 def get_random_dni():
@@ -32,6 +35,17 @@ def get_person_trait(trait_name):
         trait = fake.last_name()
     elif trait_name == "email":
         trait = fake.ascii_free_email()
+    elif trait_name == "domicilio":
+        trait = fake.street_address()
+    elif trait_name == "localidad":
+        trait = fake.municipality()
+    elif trait_name == "barrio":
+        trait = fake.street_municipality()
+    elif trait_name == "fecha_nacimiento":
+        # Devolver fecha entre 1970 y 2000, con formato "1999-05-30"
+        start_date = datetime(1970, 1, 1)
+        end_date = datetime(2007, 1, 1)
+        trait = fake.date_between(start_date, end_date).strftime("%Y-%m-%d")
 
     return trait
 
@@ -68,6 +82,88 @@ def get_cancha_sport(poli_sports):
     sport_idx = int(input("Ingresar el deporte de cancha: "))
 
     return poli_sports[sport_idx]
+
+
+def rellenar_nombres(driver):
+    inputs = driver.find_elements(
+        By.XPATH, f"//input[contains({ID_TO_LOWERCASE}, 'form_nombre')]"
+    )
+    for input in inputs:
+        input.send_keys(get_person_trait("first_name"))
+
+
+def rellenar_fechas_nacimiento(driver):
+    inputs = driver.find_elements(
+        By.XPATH, f"//input[contains({ID_TO_LOWERCASE}, 'form_fechanacasistente')]"
+    )
+    for input in inputs:
+        input.send_keys(get_person_trait("fecha_nacimiento"))
+
+
+def rellenar_apellidos(driver):
+    inputs = driver.find_elements(
+        By.XPATH, f"//input[contains({ID_TO_LOWERCASE}, 'form_apellido')]"
+    )
+    for input in inputs:
+        input.send_keys(get_person_trait("last_name"))
+
+
+def rellenar_localidades(driver):
+    inputs = driver.find_elements(
+        By.XPATH, f"//input[contains({ID_TO_LOWERCASE}, 'form_localidad')]"
+    )
+    for input in inputs:
+        input.send_keys(get_person_trait("localidad"))
+
+
+def rellenar_barrios(driver):
+    inputs = driver.find_elements(
+        By.XPATH, f"//input[contains({ID_TO_LOWERCASE}, 'form_barrio')]"
+    )
+    for input in inputs:
+        input.send_keys(get_person_trait("barrio"))
+
+    # Input que tiene diferente id a los otros
+    input_extra = driver.find_element(By.ID, 'form_Comuna')
+    input_extra.send_keys(get_person_trait("barrio"))
+
+
+def rellenar_dnis(driver):
+    inputs = driver.find_elements(
+        By.XPATH, f"//input[contains({ID_TO_LOWERCASE}, 'form_tipoynrodoca')][@type='number']"
+    )
+    for input in inputs:
+        input.send_keys(get_random_dni())
+
+
+def rellenar_emails(driver):
+    inputs = driver.find_elements(
+        By.XPATH, f"//input[contains({ID_TO_LOWERCASE}, 'form_email')]"
+    )
+    for input in inputs:
+        input.send_keys(get_person_trait("email"))
+
+
+def rellenar_domicilios(driver):
+    inputs = driver.find_elements(
+        By.XPATH, f"//input[contains({ID_TO_LOWERCASE}, 'form_domicilio')]"
+    )
+    for input in inputs:
+        input.send_keys(get_person_trait("domicilio"))
+
+
+def rellenar_telefonos(driver):
+    inputs = driver.find_elements(
+        By.XPATH, f"//input[contains({ID_TO_LOWERCASE}, 'form_telefono')]"
+    )
+    for input in inputs:
+        input.send_keys(get_person_trait("domicilio"))
+
+
+def rellenar_cantidad_asistentes(driver):
+    # Seleccionar el valor de 4 asistentes del select dropdown
+    cantidad_asistentes = Select(driver.find_element(By.ID, "form_CantidadAsistentes"))
+    cantidad_asistentes.select_by_value("4")    
 
 
 def main():
@@ -114,15 +210,11 @@ def main():
     driver.find_element(By.XPATH, "//div[@data-start='fecha']").click()
     sleep(SPEED)
 
-    # try:
-    #     driver.find_element(By.XPATH, f"//p[@data-month='{cancha_month}']")
-    # except NoSuchElementException:
     # Elegir mes
     driver.find_element(By.ID, "monthSelected").click()
     sleep(SPEED)
 
     driver.find_element(By.XPATH, f"//p[@data-month='{cancha_month}']").click()
-    sleep(SPEED)
 
     # Elegir dia de la cancha
     year = strftime("%Y")
@@ -150,34 +242,20 @@ def main():
     driver.find_element(By.ID, "next").click()
     sleep(SPEED)
 
-    # Elegir todos los inputs de nombre, apellido, email y dni
-    nombre_inputs = driver.find_elements(
-        By.XPATH, "//input[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'form_nombre')]"
+    # Rellenar campos especificos de la cancha de tennis del poli don pepe
+    if (cancha_sport == "Tennis") and (poli["name"] == "Don Pepe"):
+        rellenar_cantidad_asistentes(driver)
+        rellenar_localidades(driver)
+        rellenar_barrios(driver)
+        rellenar_fechas_nacimiento(driver)
+        rellenar_domicilios(driver)
+        rellenar_telefonos(driver)
 
-    )
-    apellido_inputs = driver.find_elements(
-        By.XPATH, "//input[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'form_apellido')]"
-    )
-    email_inputs = driver.find_elements(
-        By.XPATH, "//input[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'form_email')]"
-    )
-    dni_inputs = driver.find_elements(
-        By.XPATH, "//input[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'form_tipoynrodoca')][@type='number']"
-    )
-    sleep(SPEED)
-
-    # Rellenar todos los inputs de nombre, apellido, email y dni con datos falsos de Faker
-    for nombre_input in nombre_inputs:
-        nombre_input.send_keys(get_person_trait("first_name"))
-
-    for apellido_input in apellido_inputs:
-        apellido_input.send_keys(get_person_trait("last_name"))
-
-    for email_input in email_inputs:
-        email_input.send_keys(get_person_trait("email"))
-
-    for dni_input in dni_inputs:
-        dni_input.send_keys(get_random_dni())
+    # Rellenar campos generales para todas las canchas
+    rellenar_nombres(driver)
+    rellenar_apellidos(driver)
+    rellenar_dnis(driver)
+    rellenar_emails(driver)
 
     # Clickear en el boton de siguiente
     driver.find_element(
