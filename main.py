@@ -13,7 +13,7 @@ from campos_data import campos
 fake = Faker(["es_AR"])
 
 # Dependiendo de la velocidad de tu computadora ajustar la velocidad
-SPEED = 1
+SPEED = 2
 # Se utiliza translate para volver el texto del id a minusculas
 ID_TO_LOWERCASE = "translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"
 
@@ -213,26 +213,30 @@ def main():
 
     # Rellenar campos generales para todas las canchas
     rellenar_campos(driver, campos["nombre"])
+    sleep(SPEED / 2)
     rellenar_campos(driver, campos["apellido"])
+    sleep(SPEED / 2)
     rellenar_dnis(driver, campos["dni"])
+    sleep(SPEED / 2)
     rellenar_campos(driver, campos["email"])
+    sleep(SPEED / 2)
 
-    # # Clickear en el boton de siguiente
-    # driver.find_element(
-    #     By.XPATH, "//button[contains(text(), 'Siguiente')]").click()
-    # sleep(SPEED)
+    # Clickear en el boton de siguiente
+    driver.find_element(
+        By.XPATH, "//button[contains(text(), 'Siguiente')]").click()
+    sleep(SPEED)
 
-    # # Clickear en el boton de confirmar turno
-    # driver.find_element(By.ID, "confirmarTurno").click()
-    # sleep(SPEED)
+    # Clickear en el boton de confirmar turno
+    driver.find_element(By.ID, "confirmarTurno").click()
+    sleep(SPEED)
 
-    # # Clickear en el boton de siguiente
-    # driver.find_element(
-    #     By.XPATH, "//button[contains(text(), 'Finalizar')]").click()
+    # Clickear en el boton de siguiente
+    driver.find_element(
+        By.XPATH, "//button[contains(text(), 'Finalizar')]").click()
 
-    # # Cerrar navegador e informar que se reservo exitosamente
-    # driver.close()
-    # print("Se reservo la cancha exitosamente!")
+    # Cerrar navegador e informar que se reservo exitosamente
+    driver.close()
+    print("Se reservo la cancha exitosamente!")
 
 
 if __name__ == "__main__":
