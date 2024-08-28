@@ -6,17 +6,23 @@ Se pregunta al usuario el link de la pagina de las canchas de futbol en el polid
 
 Automatizo desde abrir el navegador, con el paquete [Selenium](https://www.selenium.dev/documentation/webdriver/), iniciar sesion, pedir turno, seleccionar horario y fecha, rellenar los datos (nombre, apellido, email y dni), con datos falsos gracias al paquete [Faker](https://github.com/joke2k/faker)
 
-Si tenes errores abriendo el navegador Firefox o Chrome, y estas en Ubuntu seguramente tengas instalado el navegador con un snap lo que te recomendario seria desintales el navegador y lo instales sin snap.
+Si tenes errores abriendo el navegador Firefox, y estas en Ubuntu seguramente tengas instalado el navegador con un snap lo que te recomendario seria desintales el navegador y lo instales sin snap.
+
+Aca hay una [guia](https://linuxconfig.org/switching-to-firefoxs-deb-installation-on-ubuntu-22-04-a-guide-to-avoiding-snap-packages) de como desinstalar el Firefox snap e instalarlo como un paquete normal en Ubuntu.
 
 # Instalación
 
 ```bash
-  # clonar repositorio
+  # clonamos el repositorio
   git clone https://github.com/lopezac/tramite-ba-futbol.git
-  # moverse a la carpeta del repositorio clonado
+  # nos movemos a la carpeta del repositorio clonado
   cd tramite-ba-futbol
-  # instalar dependencias
-  pip install -r requirements.txt
-  # correr programa
+  # creamos un python virtual environment
+  python3 -m venv .venv
+  # entramos al virtual environment
+  source .venv/bin/activate
+  # instalamos dependencias
+  pip3 install -r requirements.txt
+  # corremos el programa
   python3 main.py
 ```
