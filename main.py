@@ -15,7 +15,7 @@ from polideportivos_data import supported_polis
 fake = Faker(["es_AR"])
 
 # Dependiendo de la velocidad de tu computadora ajustar la velocidad
-SPEED = 2
+SPEED = 6
 # Se utiliza translate para volver el texto del id a minusculas
 ID_TO_LOWERCASE = "translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"
 
